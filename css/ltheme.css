@@ -11,6 +11,8 @@
 
 body {
     font-family: sans-serif;
+    background-color: #ddd;
+    color: #000;
 }
 
 /* header */
@@ -51,7 +53,14 @@ header h2:active {
     transition: all 0.3s;
 }
 
+.more-btn:hover {
+    background-color: #ffffff9f;
+}
+
 .menu-container {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgb(150, 150, 150);
+    user-select: none;
     position: absolute;
     top: 50px;
     left: 20px;
@@ -76,6 +85,11 @@ header h2:active {
     right: 10px;
 }
 
+#history,
+#change-theme {
+    border-bottom: 1px solid #ddd;
+}
+
 .hide-menu {
     display: none;
 }
@@ -92,11 +106,15 @@ header h2:active {
 .calculator {
     width: 310px;
     margin: 0 auto;
+    background-color: rgb(150, 150, 150);
+    box-shadow: 0 3px 5px rgb(100, 100, 100);
     padding: 50px 20px 30px 20px;
     border-radius: 10px;
 }
 
 .display {
+    background-color: #e0e0e0;
+    box-shadow: 0 5px 5px rgb(130, 130, 130);
     font-family: digital;
     height: 60px;
     line-height: 60px;
@@ -139,6 +157,9 @@ header h2:active {
 .clear,
 .backspace,
 .sound {
+    color: #fff;
+    background-color: rgb(255, 110, 0);
+    box-shadow: 0 5px 5px rgb(130, 130, 130);
     font-size: 25px;
     font-weight: bold;
     border: none;
@@ -147,6 +168,9 @@ header h2:active {
 }
 
 .number {
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0 5px 5px rgb(130, 130, 130);
     font-size: 25px;
     border: none;
     border-radius: 10px;
@@ -160,6 +184,24 @@ header h2:active {
     border: none;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.dotte {
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0 5px 5px rgb(130, 130, 130);
+}
+
+.operator {
+    color: #fff;
+    background-color: rgb(255, 150, 0);
+    box-shadow: 0 5px 5px rgb(130, 130, 130);
+}
+
+.equal {
+    color: #fff;
+    background-color: rgb(255, 110, 0);
+    box-shadow: 0 5px 5px rgb(130, 130, 130);
 }
 
 .row1 button:active,
@@ -185,6 +227,7 @@ header h2:active {
     direction: ltr;
     width: 230px;
     border-radius: 16px 0 0 0;
+    background-color: #f8f8f8;
 }
 
 .history-title h4 {
@@ -207,10 +250,16 @@ header h2:active {
     direction: ltr;
     width: 230px;
     border-radius: 0 0 0 16px;
+    background-color: #f8f8f8;
 }
 
 .item {
     padding: 5px 20px;
+    border-top: 1px solid #ddd;
+}
+
+.item:last-child {
+    border-bottom: 1px solid #ddd;
 }
 
 .item-exp {
@@ -219,6 +268,7 @@ header h2:active {
     margin-bottom: 5px;
     letter-spacing: 1px;
     word-break: break-all;
+    color: #444;
 }
 
 .item-res {
@@ -249,6 +299,7 @@ header h2:active {
     left: 50%;
     transform: translateX(-50%);
     padding: 10px 15px 7px 15px;
+    background-color: #fefefe
     clip-path: polygon(
         50% 0%,
         65% 20%,
@@ -295,93 +346,6 @@ header h2:active {
     .menu-container svg {
         right: 5px;
     }
-}
-
-
-body {
-    background-color: #ddd;
-    color: #000;
-}
-
-.more-btn:hover {
-    background-color: #ffffff9f;
-}
-
-.menu-container {
-    background-color: #fff;
-    box-shadow: 0 0 5px rgb(150, 150, 150);
-    user-select: none;
-}
-
-#history,
-#change-theme {
-    border-bottom: 1px solid #ddd;
-}
-
-.calculator {
-    background-color: rgb(150, 150, 150);
-    box-shadow: 0 3px 5px rgb(100, 100, 100);
-}
-
-.display {
-    background-color: #e0e0e0;
-    box-shadow: 0 5px 5px rgb(130, 130, 130);
-}
-
-.clear,
-.backspace,
-.sound {
-    color: #fff;
-    background-color: rgb(255, 110, 0);
-    box-shadow: 0 5px 5px rgb(130, 130, 130);
-}
-
-.number {
-    color: #000;
-    background-color: #fff;
-    box-shadow: 0 5px 5px rgb(130, 130, 130);
-}
-
-.dotte {
-    color: #000;
-    background-color: #fff;
-    box-shadow: 0 5px 5px rgb(130, 130, 130);
-}
-
-.operator {
-    color: #fff;
-    background-color: rgb(255, 150, 0);
-    box-shadow: 0 5px 5px rgb(130, 130, 130);
-}
-
-.equal {
-    color: #fff;
-    background-color: rgb(255, 110, 0);
-    box-shadow: 0 5px 5px rgb(130, 130, 130);
-}
-
-.history-title {
-    background-color: #f8f8f8;
-}
-
-.history-items {
-    background-color: #f8f8f8;
-}
-
-.item {
-    border-top: 1px solid #ddd;
-}
-
-.item:last-child {
-    border-bottom: 1px solid #ddd;
-}
-
-.item-exp {
-    color: #444;
-}
-
-#contact::after {
-    background-color: #fefefe;
 }
 
 /* media query */
