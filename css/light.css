@@ -1,0 +1,107 @@
+body {
+    background-color: #ddd;
+    color: #000;
+}
+
+.more-btn:hover {
+    background-color: #ffffff9f;
+}
+
+.menu-container {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgb(150, 150, 150);
+    user-select: none;
+}
+
+#history,
+#change-theme {
+    border-bottom: 1px solid #ddd;
+}
+
+.calculator {
+    background-color: rgb(150, 150, 150);
+    box-shadow: 0 3px 5px rgb(100, 100, 100);
+}
+
+.display {
+    background-color: #e0e0e0;
+    box-shadow: 0 5px 5px rgb(130, 130, 130);
+}
+
+.clear,
+.backspace,
+.sound {
+    color: #fff;
+    background-color: rgb(255, 110, 0);
+    box-shadow: 0 5px 5px rgb(130, 130, 130);
+}
+
+.number {
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0 5px 5px rgb(130, 130, 130);
+}
+
+.dotte {
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0 5px 5px rgb(130, 130, 130);
+}
+
+.operator {
+    color: #fff;
+    background-color: rgb(255, 150, 0);
+    box-shadow: 0 5px 5px rgb(130, 130, 130);
+}
+
+.equal {
+    color: #fff;
+    background-color: rgb(255, 110, 0);
+    box-shadow: 0 5px 5px rgb(130, 130, 130);
+}
+
+.history-title {
+    background-color: #f8f8f8;
+}
+
+.history-items {
+    background-color: #f8f8f8;
+}
+
+.item {
+    border-top: 1px solid #ddd;
+}
+
+.item:last-child {
+    border-bottom: 1px solid #ddd;
+}
+
+.item-exp {
+    color: #444;
+}
+
+#contact::after {
+    background-color: #fefefe;
+}
+
+/* media query */
+@media screen and (min-width: 560px) {
+    .menu-container {
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .menu-container div {
+        background-color: #ffffffa7;
+        box-shadow: 0 5px 2px lightgray;
+    }
+    .menu-container div:hover {
+        background-color: #ffffff;
+    }
+    .menu-container div:active {
+        box-shadow: 0 2px 2px lightgray;
+    }
+    #history,
+    #change-theme {
+        border-bottom: none;
+    }
+}
