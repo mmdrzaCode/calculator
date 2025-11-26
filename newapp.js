@@ -4,6 +4,7 @@ const changeThemeBtn = document.getElementById("change-theme");
 const svgIcons = document.querySelectorAll(".svg-icon");
 const historyBtn = document.getElementById("history");
 const deleteHistory = document.getElementById("delete-history");
+const contactBtn = document.getElementById("contact");
 
 const display = document.querySelector(".display");
 const numbersBtn = document.querySelectorAll(".number");
@@ -365,4 +366,8 @@ document.addEventListener("keyup", (e) => {
         equal.style.transform = "";
         equal.style.boxShadow = "";
     }
+});
+
+contactBtn.addEventListener("click", () => {
+    window.open('https://github.com/mmdrzacode', '_blank');
 });
